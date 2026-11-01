@@ -1,0 +1,47 @@
+﻿scenario,drug,pt,a,b,c,d,ROR,ROR025,ROR975,PRR,chi2,IC,IC025,pool_n,n_drug
+S3_no_ruxolitinib,Hydroxyurea,Splenic infarction,21,2865,37,16696,3.30754,1.93332,5.65856,3.29075,21.4259,1.29944,0.508958,19619,2886
+S3_no_ruxolitinib,Hydroxyurea,Portal vein thrombosis,4,2882,26,16707,0.891849,0.311023,2.55735,0.891999,0.0454017,-0.141782,-1.69258,19619,2886
+S3_no_ruxolitinib,Hydroxyurea,Splenic vein thrombosis,3,2883,5,16728,3.48137,0.83152,14.5757,3.47879,3.31307,1.35007,-0.757923,19619,2886
+S3_no_ruxolitinib,Hydroxyurea,Budd-Chiari syndrome,2,2884,5,16728,2.32011,0.449907,11.9645,2.3192,1.07235,0.957753,-1.45704,19619,2886
+S3_no_ruxolitinib,Hydroxyurea,Thrombophlebitis,4,2882,17,16716,1.36474,0.458881,4.05881,1.36423,0.315228,0.372791,-1.23173,19619,2886
+S3_no_ruxolitinib,Hydroxyurea,Venous thrombosis,3,2883,12,16721,1.44997,0.408913,5.14143,1.4495,0.334796,0.44318,-1.42024,19619,2886
+S3_no_ruxolitinib,Hydroxyurea,Arterial thrombosis,2,2884,13,16720,0.891924,0.201166,3.95459,0.891999,0.0226835,-0.141782,-2.33417,19619,2886
+S3_no_ruxolitinib,Hydroxyurea,Transient ischaemic attack,19,2867,42,16691,2.63366,1.52963,4.53452,2.6229,13.1773,1.0823,0.282416,19619,2886
+S4_untreated_MPN,Hydroxyurea,Splenic infarction,32,6029,35,14765,2.23908,1.38506,3.61968,2.23254,11.4115,0.717091,0.00999405,14800,6061
+S4_untreated_MPN,Hydroxyurea,Portal vein thrombosis,6,6055,26,14774,0.563069,0.231642,1.36869,0.563502,1.65086,-0.631857,-1.93942,14800,6061
+S4_untreated_MPN,Hydroxyurea,Splenic vein thrombosis,4,6057,5,14795,1.9541,0.524549,7.27962,1.95347,1.03463,0.613256,-1.32282,14800,6061
+S4_untreated_MPN,Hydroxyurea,Budd-Chiari syndrome,2,6059,4,14796,1.22099,0.223575,6.66812,1.22092,0.0533149,0.198218,-2.30099,14800,6061
+S4_untreated_MPN,Hydroxyurea,Thrombophlebitis,4,6057,17,14783,0.57427,0.193153,1.70739,0.574551,1.02116,-0.609137,-2.21321,14800,6061
+S4_untreated_MPN,Hydroxyurea,Venous thrombosis,4,6057,12,14788,0.813824,0.262367,2.52437,0.813947,0.127682,-0.216819,-1.88328,14800,6061
+S4_untreated_MPN,Hydroxyurea,Arterial thrombosis,4,6057,12,14788,0.813824,0.262367,2.52437,0.813947,0.127682,-0.216819,-1.88328,14800,6061
+S4_untreated_MPN,Hydroxyurea,Transient ischaemic attack,31,6030,27,14773,2.81287,1.67764,4.71629,2.8036,16.7907,0.879396,0.118568,14800,6061
+S3_no_ruxolitinib,Anagrelide,Myocardial infarction,32,812,180,18595,4.07115,2.77707,5.96827,3.95471,60.6346,1.81094,1.24781,19619,844
+S3_no_ruxolitinib,Anagrelide,Cerebrovascular accident,17,827,121,18654,3.16906,1.8984,5.2902,3.12537,21.6964,1.5178,0.763447,19619,844
+S3_no_ruxolitinib,Anagrelide,Transient ischaemic attack,19,825,42,18733,10.2721,5.94803,17.7395,10.0633,107.117,2.85605,2.05173,19619,844
+S3_no_ruxolitinib,Anagrelide,Haemorrhage,85,759,1031,17744,1.92739,1.52708,2.43264,1.83399,31.5773,0.824134,0.48141,19619,844
+S3_no_ruxolitinib,Anagrelide,Splenic infarction,4,840,54,18721,1.65088,0.596493,4.56906,1.6478,0.951231,0.680884,-0.817749,19619,844
+S4_untreated_MPN,Anagrelide,Myocardial infarction,40,1337,150,14650,2.92196,2.05239,4.15997,2.86613,38.8256,1.30642,0.786382,14800,1377
+S4_untreated_MPN,Anagrelide,Cerebrovascular accident,29,1348,94,14706,3.3657,2.21129,5.12275,3.31587,36.1216,1.46981,0.851428,14800,1377
+S4_untreated_MPN,Anagrelide,Transient ischaemic attack,22,1355,27,14773,8.88359,5.04564,15.6409,8.75763,83.5564,2.39907,1.56631,14800,1377
+S4_untreated_MPN,Anagrelide,Haemorrhage,121,1256,820,13980,1.64244,1.3455,2.00491,1.58599,24.2388,0.595156,0.301587,14800,1377
+S4_untreated_MPN,Anagrelide,Splenic infarction,4,1373,35,14765,1.22901,0.436156,3.46312,1.22834,0.152745,0.268941,-1.25614,14800,1377
+S3_no_ruxolitinib,Busulfan,Portal vein thrombosis,0,143,30,19446,,,,,,,,19619,143
+S3_no_ruxolitinib,Busulfan,Splenic vein thrombosis,0,143,8,19468,,,,,,,,19619,143
+S3_no_ruxolitinib,Busulfan,Venous thrombosis,0,143,15,19461,,,,,,,,19619,143
+S3_no_ruxolitinib,Busulfan,Thrombophlebitis,0,143,21,19455,,,,,,,,19619,143
+S4_untreated_MPN,Busulfan,Portal vein thrombosis,0,197,26,14774,,,,,,,,14800,197
+S4_untreated_MPN,Busulfan,Splenic vein thrombosis,0,197,5,14795,,,,,,,,14800,197
+S4_untreated_MPN,Busulfan,Venous thrombosis,0,197,12,14788,,,,,,,,14800,197
+S4_untreated_MPN,Busulfan,Thrombophlebitis,0,197,17,14783,,,,,,,,14800,197
+S3_no_ruxolitinib,Luspatercept,Arterial thrombosis,0,57,15,19547,,,,,,,,19619,57
+S3_no_ruxolitinib,Luspatercept,Retinal vein occlusion,0,57,6,19556,,,,,,,,19619,57
+S3_no_ruxolitinib,Luspatercept,Myocardial infarction,2,55,210,19352,3.351,0.812058,13.828,3.2685,3.15328,1.69915,-0.387515,19619,57
+S3_no_ruxolitinib,Luspatercept,Thrombosis,4,53,389,19173,3.71984,1.33968,10.3288,3.52898,7.32227,1.80869,0.305262,19619,57
+S4_untreated_MPN,Luspatercept,Arterial thrombosis,0,83,12,14788,,,,,,,,14800,83
+S4_untreated_MPN,Luspatercept,Retinal vein occlusion,0,83,5,14795,,,,,,,,14800,83
+S4_untreated_MPN,Luspatercept,Myocardial infarction,3,80,150,14650,3.6625,1.14379,11.7276,3.56627,5.4878,1.81391,0.100642,14800,83
+S4_untreated_MPN,Luspatercept,Thrombosis,5,78,295,14505,3.15189,1.26679,7.84218,3.02226,6.78979,1.57945,0.237573,14800,83
+S3_no_ruxolitinib,Ropeginterferon alfa-2b,Myocardial infarction,4,1316,208,18091,0.264365,0.0981375,0.71215,0.266594,8.0047,-1.83428,-3.29311,19619,1320
+S3_no_ruxolitinib,Ropeginterferon alfa-2b,Cerebrovascular accident,5,1315,133,18166,0.51934,0.212288,1.27051,0.521161,2.13509,-0.892955,-2.20995,19619,1320
+S4_untreated_MPN,Ropeginterferon alfa-2b,Myocardial infarction,6,1457,150,14650,0.402196,0.177532,0.911168,0.404648,5.1024,-1.22585,-2.42974,14800,1463
+S4_untreated_MPN,Ropeginterferon alfa-2b,Cerebrovascular accident,5,1458,94,14706,0.536512,0.217877,1.32113,0.538096,1.89391,-0.832837,-2.15946,14800,1463

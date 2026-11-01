@@ -1,0 +1,49 @@
+﻿scenario,disease,pair,pt,a,c,ROR,ROR025,ROR975,chi2,p
+S1_excl_combo,ET,Anagrelide_vs_Hydroxyurea,Myocardial infarction,23,10,4.77381,2.25696,10.0973,20.1907,7.00929e-06
+S1_excl_combo,ET,Anagrelide_vs_Hydroxyurea,Cerebrovascular accident,9,8,2.2828,0.876223,5.94734,3.0152,0.0824872
+S1_excl_combo,ET,Anagrelide_vs_Hydroxyurea,Transient ischaemic attack,11,9,2.48652,1.02465,6.03404,4.33324,0.037375
+S1_excl_combo,ET,Anagrelide_vs_Hydroxyurea,Haemorrhage,61,56,2.32832,1.59689,3.39477,20.2409,6.82785e-06
+S1_excl_combo,ET,Anagrelide_vs_Hydroxyurea,Pulmonary embolism,2,14,0.284988,0.0645559,1.25811,3.11995,0.077339
+S1_excl_combo,ET,Anagrelide_vs_Hydroxyurea,Deep vein thrombosis,1,7,0.286198,0.0351291,2.33166,1.55295,0.212701
+S1_excl_combo,ET,Anagrelide_vs_Hydroxyurea,Thrombosis,13,20,1.31459,0.649332,2.66144,0.581145,0.445864
+S1_excl_combo,ET,Anagrelide_vs_Hydroxyurea,Splenic infarction,2,2,2.01525,0.283161,14.3425,0.51003,0.475126
+S2_serious_only,ET,Anagrelide_vs_Hydroxyurea,Myocardial infarction,33,20,2.71498,1.54554,4.76927,13.0196,0.000308245
+S2_serious_only,ET,Anagrelide_vs_Hydroxyurea,Cerebrovascular accident,21,20,1.69822,0.91395,3.15549,2.86862,0.0903224
+S2_serious_only,ET,Anagrelide_vs_Hydroxyurea,Transient ischaemic attack,18,17,1.70972,0.875327,3.33947,2.52169,0.11229
+S2_serious_only,ET,Anagrelide_vs_Hydroxyurea,Haemorrhage,80,77,1.74236,1.25542,2.41816,11.2424,0.0007995
+S2_serious_only,ET,Anagrelide_vs_Hydroxyurea,Pulmonary embolism,3,15,0.316782,0.0913868,1.09809,3.65597,0.0558686
+S2_serious_only,ET,Anagrelide_vs_Hydroxyurea,Deep vein thrombosis,5,11,0.724491,0.250691,2.09377,0.3573,0.55001
+S2_serious_only,ET,Anagrelide_vs_Hydroxyurea,Thrombosis,20,27,1.18897,0.661822,2.13601,0.336118,0.562078
+S2_serious_only,ET,Anagrelide_vs_Hydroxyurea,Splenic infarction,3,3,1.60055,0.322167,7.9517,0.336808,0.561677
+S1_excl_combo,PV,Ropeginterferon alfa-2b_vs_Hydroxyurea,Myocardial infarction,4,23,0.344488,0.118824,0.998717,4.2237,0.0398631
+S1_excl_combo,PV,Ropeginterferon alfa-2b_vs_Hydroxyurea,Cerebrovascular accident,4,29,0.27242,0.0955156,0.776971,6.78146,0.00921096
+S1_excl_combo,PV,Ropeginterferon alfa-2b_vs_Hydroxyurea,Transient ischaemic attack,2,7,0.569239,0.118043,2.74505,0.50585,0.476941
+S1_excl_combo,PV,Ropeginterferon alfa-2b_vs_Hydroxyurea,Haemorrhage,16,158,0.189652,0.112781,0.318919,48.4779,3.34036e-12
+S1_excl_combo,PV,Ropeginterferon alfa-2b_vs_Hydroxyurea,Pulmonary embolism,4,23,0.344488,0.118824,0.998717,4.2237,0.0398631
+S1_excl_combo,PV,Ropeginterferon alfa-2b_vs_Hydroxyurea,Deep vein thrombosis,4,9,0.88633,0.272306,2.88491,0.0402089,0.841073
+S1_excl_combo,PV,Ropeginterferon alfa-2b_vs_Hydroxyurea,Thrombosis,14,61,0.450566,0.250847,0.809294,7.48615,0.00621754
+S1_excl_combo,PV,Ropeginterferon alfa-2b_vs_Hydroxyurea,Splenic infarction,0,5,,,,,1
+S2_serious_only,PV,Ropeginterferon alfa-2b_vs_Hydroxyurea,Myocardial infarction,5,24,1.18307,0.447182,3.12992,0.114961,0.734565
+S2_serious_only,PV,Ropeginterferon alfa-2b_vs_Hydroxyurea,Cerebrovascular accident,5,30,0.942436,0.362186,2.45229,0.0147691,0.903273
+S2_serious_only,PV,Ropeginterferon alfa-2b_vs_Hydroxyurea,Transient ischaemic attack,2,7,1.62245,0.335124,7.85482,0.368711,0.543708
+S2_serious_only,PV,Ropeginterferon alfa-2b_vs_Hydroxyurea,Haemorrhage,12,143,0.449055,0.245255,0.822206,7.0684,0.00784551
+S2_serious_only,PV,Ropeginterferon alfa-2b_vs_Hydroxyurea,Pulmonary embolism,4,23,0.984348,0.337544,2.87056,0.00083467,0.976952
+S2_serious_only,PV,Ropeginterferon alfa-2b_vs_Hydroxyurea,Deep vein thrombosis,3,9,1.89774,0.510243,7.05826,0.945046,0.330983
+S2_serious_only,PV,Ropeginterferon alfa-2b_vs_Hydroxyurea,Thrombosis,14,61,1.3168,0.724991,2.39171,0.821671,0.364692
+S2_serious_only,PV,Ropeginterferon alfa-2b_vs_Hydroxyurea,Splenic infarction,0,5,,,,,1
+S1_excl_combo,MF,Ruxolitinib_vs_Hydroxyurea,Myocardial infarction,126,2,1.75126,0.432145,7.09699,0.632254,0.42653
+S1_excl_combo,MF,Ruxolitinib_vs_Hydroxyurea,Cerebrovascular accident,120,6,0.551943,0.242094,1.25836,2.05714,0.151494
+S1_excl_combo,MF,Ruxolitinib_vs_Hydroxyurea,Transient ischaemic attack,29,0,,,,,1
+S1_excl_combo,MF,Ruxolitinib_vs_Hydroxyurea,Haemorrhage,841,75,0.281984,0.219127,0.362871,109.862,1.05035e-25
+S1_excl_combo,MF,Ruxolitinib_vs_Hydroxyurea,Pulmonary embolism,74,8,0.25382,0.121808,0.528906,15.6223,7.73353e-05
+S1_excl_combo,MF,Ruxolitinib_vs_Hydroxyurea,Deep vein thrombosis,40,3,0.368469,0.113655,1.19458,3.00527,0.0829942
+S1_excl_combo,MF,Ruxolitinib_vs_Hydroxyurea,Thrombosis,254,9,0.779808,0.399036,1.52392,0.532072,0.465737
+S1_excl_combo,MF,Ruxolitinib_vs_Hydroxyurea,Splenic infarction,31,3,0.28544,0.0870121,0.936377,4.86803,0.0273587
+S2_serious_only,MF,Ruxolitinib_vs_Hydroxyurea,Myocardial infarction,145,21,0.785237,0.495252,1.24502,1.06206,0.302745
+S2_serious_only,MF,Ruxolitinib_vs_Hydroxyurea,Cerebrovascular accident,141,27,0.591187,0.390228,0.895635,6.29082,0.0121365
+S2_serious_only,MF,Ruxolitinib_vs_Hydroxyurea,Transient ischaemic attack,36,7,0.585522,0.260089,1.31815,1.71144,0.190799
+S2_serious_only,MF,Ruxolitinib_vs_Hydroxyurea,Haemorrhage,829,163,0.550655,0.461051,0.657672,44.5178,2.52051e-11
+S2_serious_only,MF,Ruxolitinib_vs_Hydroxyurea,Pulmonary embolism,80,14,0.649672,0.367237,1.14932,2.22971,0.135379
+S2_serious_only,MF,Ruxolitinib_vs_Hydroxyurea,Deep vein thrombosis,43,7,0.699763,0.314202,1.55845,0.771824,0.379653
+S2_serious_only,MF,Ruxolitinib_vs_Hydroxyurea,Thrombosis,274,35,0.890721,0.623844,1.27177,0.406074,0.523969
+S2_serious_only,MF,Ruxolitinib_vs_Hydroxyurea,Splenic infarction,38,10,0.431798,0.214693,0.868447,5.88049,0.0153096

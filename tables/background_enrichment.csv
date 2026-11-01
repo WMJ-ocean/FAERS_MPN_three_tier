@@ -1,0 +1,17 @@
+﻿pt,n_mpn,pct_mpn,n_db,pct_db,enrichment
+Splenic infarction,106,0.181,1714,0.008,21.84
+Splenic vein thrombosis,19,0.032,494,0.002,13.58
+Portal vein thrombosis,59,0.101,3179,0.015,6.55
+Budd-Chiari syndrome,13,0.022,253,0.001,18.14
+Arterial thrombosis,22,0.038,2326,0.011,3.34
+Myocardial infarction,422,0.72,202375,0.978,0.74
+Cerebrovascular accident,407,0.695,167799,0.811,0.86
+Transient ischaemic attack,144,0.246,33439,0.162,1.52
+Retinal vein occlusion,10,0.017,2813,0.014,1.26
+Thrombosis,945,1.613,195268,0.944,1.71
+Venous thrombosis,22,0.038,9411,0.045,0.83
+Embolism,337,0.575,109997,0.532,1.08
+Pulmonary embolism,300,0.512,94642,0.457,1.12
+Deep vein thrombosis,172,0.294,66384,0.321,0.91
+Thrombophlebitis,31,0.053,7009,0.034,1.56
+Haemorrhage,2545,4.343,625826,3.024,1.44

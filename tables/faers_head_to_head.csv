@@ -1,0 +1,49 @@
+﻿disease,drug_a,drug_b,pt,a,b,c,d,N_a,N_b,overlap,ROR,ROR025,ROR975,chi2,p,q
+ET,Anagrelide,Hydroxyurea,Pulmonary embolism,3,810,15,1397,813,1412,221,0.344938,0.0995574,1.19511,3.09063,0.0787443,0.251982
+ET,Anagrelide,Hydroxyurea,Deep vein thrombosis,5,808,11,1401,813,1412,221,0.788141,0.272869,2.27643,0.194442,0.659245,1
+ET,Anagrelide,Hydroxyurea,Thrombosis,20,793,27,1385,813,1412,221,1.29373,0.720894,2.32174,0.74888,0.386831,0.884185
+ET,Anagrelide,Hydroxyurea,Venous thrombosis,1,812,3,1409,813,1412,221,0.578407,0.0600645,5.56993,0.230111,0.631442,1
+ET,Anagrelide,Hydroxyurea,Portal vein thrombosis,0,813,0,1412,813,1412,221,,,,,1,1
+ET,Anagrelide,Hydroxyurea,Splenic vein thrombosis,0,813,2,1410,813,1412,221,,,,,1,1
+ET,Anagrelide,Hydroxyurea,Splenic infarction,3,810,3,1409,813,1412,221,1.73951,0.350265,8.63882,0.470102,0.49294,0.98588
+ET,Anagrelide,Hydroxyurea,Arterial thrombosis,1,812,1,1411,813,1412,221,1.73768,0.108539,27.82,0.156419,0.692475,1
+ET,Anagrelide,Hydroxyurea,Myocardial infarction,33,780,20,1392,813,1412,221,2.94462,1.67813,5.16691,15.4948,8.27329e-05,0.000661864
+ET,Anagrelide,Hydroxyurea,Cerebrovascular accident,21,792,20,1392,813,1412,221,1.84545,0.994177,3.42565,3.88203,0.0488054,0.195222
+ET,Anagrelide,Hydroxyurea,Transient ischaemic attack,19,794,17,1395,813,1412,221,1.96362,1.01478,3.79966,4.16113,0.0413619,0.195222
+ET,Anagrelide,Hydroxyurea,Retinal vein occlusion,0,813,0,1412,813,1412,221,,,,,1,1
+ET,Anagrelide,Hydroxyurea,Embolism,7,806,20,1392,813,1412,221,0.604467,0.254485,1.43576,1.32773,0.249209,0.664558
+ET,Anagrelide,Hydroxyurea,Thrombophlebitis,0,813,1,1411,813,1412,221,,,,,1,1
+ET,Anagrelide,Hydroxyurea,Budd-Chiari syndrome,1,812,0,1412,813,1412,221,,,,,1,1
+ET,Anagrelide,Hydroxyurea,Haemorrhage,83,730,78,1334,813,1412,221,1.94454,1.40922,2.68321,16.8711,4.00063e-05,0.000640101
+PV,Ropeginterferon alfa-2b,Hydroxyurea,Pulmonary embolism,4,1198,23,2220,1202,2243,156,0.322276,0.111195,0.934054,4.8283,0.0279962,0.0895878
+PV,Ropeginterferon alfa-2b,Hydroxyurea,Deep vein thrombosis,4,1198,9,2234,1202,2243,156,0.828789,0.254694,2.69693,0.0975952,0.754735,1
+PV,Ropeginterferon alfa-2b,Hydroxyurea,Thrombosis,15,1187,62,2181,1202,2243,156,0.444534,0.2518,0.784788,8.23367,0.00411204,0.0328963
+PV,Ropeginterferon alfa-2b,Hydroxyurea,Venous thrombosis,0,1202,1,2242,1202,2243,156,,,,,1,1
+PV,Ropeginterferon alfa-2b,Hydroxyurea,Portal vein thrombosis,0,1202,4,2239,1202,2243,156,,,,,1,1
+PV,Ropeginterferon alfa-2b,Hydroxyurea,Splenic vein thrombosis,0,1202,1,2242,1202,2243,156,,,,,1,1
+PV,Ropeginterferon alfa-2b,Hydroxyurea,Splenic infarction,0,1202,5,2238,1202,2243,156,,,,,1,1
+PV,Ropeginterferon alfa-2b,Hydroxyurea,Arterial thrombosis,0,1202,1,2242,1202,2243,156,,,,,1,1
+PV,Ropeginterferon alfa-2b,Hydroxyurea,Myocardial infarction,5,1197,24,2219,1202,2243,156,0.386209,0.146979,1.01482,4.01044,0.0452193,0.120585
+PV,Ropeginterferon alfa-2b,Hydroxyurea,Cerebrovascular accident,5,1197,30,2213,1202,2243,156,0.308131,0.119241,0.796243,6.60862,0.0101486,0.0541259
+PV,Ropeginterferon alfa-2b,Hydroxyurea,Transient ischaemic attack,2,1200,7,2236,1202,2243,156,0.532381,0.110421,2.56681,0.637533,0.424605,0.970527
+PV,Ropeginterferon alfa-2b,Hydroxyurea,Retinal vein occlusion,1,1201,0,2243,1202,2243,156,,,,,1,1
+PV,Ropeginterferon alfa-2b,Hydroxyurea,Embolism,4,1198,25,2218,1202,2243,156,0.296227,0.102853,0.853167,5.73058,0.016672,0.066688
+PV,Ropeginterferon alfa-2b,Hydroxyurea,Thrombophlebitis,0,1202,3,2240,1202,2243,156,,,,,1,1
+PV,Ropeginterferon alfa-2b,Hydroxyurea,Budd-Chiari syndrome,0,1202,1,2242,1202,2243,156,,,,,1,1
+PV,Ropeginterferon alfa-2b,Hydroxyurea,Haemorrhage,21,1181,163,2080,1202,2243,156,0.226906,0.143242,0.359436,47.1658,6.52296e-12,1.04367e-10
+MF,Ruxolitinib,Hydroxyurea,Pulmonary embolism,80,22308,14,2070,22388,2084,1505,0.530239,0.299983,0.937232,4.92676,0.0264438,0.0783747
+MF,Ruxolitinib,Hydroxyurea,Deep vein thrombosis,44,22344,7,2077,22388,2084,1505,0.584292,0.262847,1.29885,1.7804,0.182101,0.264874
+MF,Ruxolitinib,Hydroxyurea,Thrombosis,281,22107,36,2048,22388,2084,1505,0.723109,0.509616,1.02604,3.32638,0.0681769,0.121203
+MF,Ruxolitinib,Hydroxyurea,Venous thrombosis,2,22386,0,2084,22388,2084,1505,,,,,1,1
+MF,Ruxolitinib,Hydroxyurea,Portal vein thrombosis,17,22371,2,2082,22388,2084,1505,0.791069,0.182638,3.42639,0.0986525,0.753453,1
+MF,Ruxolitinib,Hydroxyurea,Splenic vein thrombosis,4,22384,0,2084,22388,2084,1505,,,,,1,1
+MF,Ruxolitinib,Hydroxyurea,Splenic infarction,38,22350,10,2074,22388,2084,1505,0.352626,0.17545,0.708722,9.3662,0.00221023,0.0117879
+MF,Ruxolitinib,Hydroxyurea,Arterial thrombosis,4,22384,2,2082,22388,2084,1505,0.186026,0.0340517,1.01626,4.74459,0.0293905,0.0783747
+MF,Ruxolitinib,Hydroxyurea,Myocardial infarction,145,22243,21,2063,22388,2084,1505,0.640405,0.404338,1.0143,3.66765,0.0554783,0.121203
+MF,Ruxolitinib,Hydroxyurea,Cerebrovascular accident,141,22247,27,2057,22388,2084,1505,0.482857,0.319103,0.730644,12.3954,0.000430385,0.00344308
+MF,Ruxolitinib,Hydroxyurea,Transient ischaemic attack,36,22352,7,2077,22388,2084,1505,0.477886,0.212404,1.07519,3.33228,0.0679327,0.121203
+MF,Ruxolitinib,Hydroxyurea,Retinal vein occlusion,2,22386,1,2083,22388,2084,1505,0.186098,0.0168669,2.05328,2.37201,0.123528,0.197645
+MF,Ruxolitinib,Hydroxyurea,Embolism,85,22303,15,2069,22388,2084,1505,0.525684,0.303064,0.911832,5.41888,0.0199201,0.0783747
+MF,Ruxolitinib,Hydroxyurea,Thrombophlebitis,5,22383,0,2084,22388,2084,1505,,,,,1,1
+MF,Ruxolitinib,Hydroxyurea,Budd-Chiari syndrome,5,22383,0,2084,22388,2084,1505,,,,,1,1
+MF,Ruxolitinib,Hydroxyurea,Haemorrhage,933,21455,167,1917,22388,2084,1505,0.499182,0.420644,0.592384,65.6928,5.2697e-16,8.43152e-15
