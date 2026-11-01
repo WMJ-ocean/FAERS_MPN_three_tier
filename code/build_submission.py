@@ -122,18 +122,22 @@ def manuscript_metrics(path=None):
     path = path or os.path.join(SUB, "manuscript.md")
     text = open(path, encoding="utf-8").read()
 
-    def block(a, b):
-        return text.split(a, 1)[1].split(b, 1)[0]
+    sections = {}
+    for chunk in re.split(r"^## ", text, flags=re.M)[1:]:
+        name, _, body = chunk.partition("\n")
+        sections[name.strip()] = body
 
     def wc(t):
         t = re.sub(r"^#+\s*", "", t, flags=re.M)
         t = t.replace("**", "").replace("*", "").replace("`", "")
         return len(t.split())
 
+    body_text = text.split("## 1 Introduction", 1)[1].split("## Figure legends", 1)[0]
+
     return {
-        "body": wc(block("## 1 Introduction", "## Figure legends")),
-        "abstract": wc(block("## Abstract", "## 1 Introduction")),
-        "keypoints": wc(block("## Key Points", "## Abstract")),
+        "body": wc(body_text),
+        "abstract": wc(sections["Abstract"]),
+        "keypoints": wc(sections["Key Points"]),
         "refs": len(re.findall(r"^\d+\.\s", text.split("## References", 1)[1], flags=re.M)),
     }
 
@@ -369,7 +373,11 @@ def build_supplementary():
     K.meta(doc, AUTHOR, TITLE + " - electronic supplementary material",
            subject="Supplementary material")
     K.p(doc, "**Electronic supplementary material**", size=12, bold=True, space_after=10)
-    K.p(doc, TITLE, size=10.5, italic=True, space_after=14)
+    K.p(doc, TITLE, size=10.5, italic=True, space_after=6)
+    K.p(doc, "Drug Safety (Springer Nature). Mingjing Wang, Yi Chen, Yan Lv, Richeng Quan, "
+             "Xiaomei Hu. Department of Hematology, Xiyuan Hospital, China Academy of Chinese "
+             "Medical Sciences, Beijing, China. Corresponding author: Xiaomei Hu, "
+             "huxiaomei_2@163.com.", size=9, space_after=14)
     K.p(doc, "Contents: Table S1 tier-1 results for all 96 pairs; Table S2 tier-2 results for "
              "all 96 pairs; Table S3 complete head-to-head results; Table S4 head-to-head "
              "sensitivity analyses; Table S5 background enrichment of the 16 events; "
