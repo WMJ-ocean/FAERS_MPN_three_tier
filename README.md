@@ -42,10 +42,12 @@ python case_series.py              # retrieve 169 individual reports
 python case_analysis.py            # structured review of those reports
 python readus_supplement.py        # READUS-PV items 7a, 8a, 8b, 13
 python figures_final.py            # Figures 1-5 and S1
-python build_submission.py         # Word versions of manuscript, tables, supplement
+python build_submission.py         # Word versions of tables and supplement
 ```
 
 Scripts read and write the caches in `cache/` and `../tables/`; adjust the `BASE` constant at the top of each file if you move the directories.
+
+`build_submission.py` also typesets the manuscript from `manuscript.md`, which is not redistributed here; run it only for the tables and the supplement, or supply your own copy of that file.
 
 ## Data source
 
