@@ -64,7 +64,7 @@ def _add_page_number_footer(doc):
     run._r.append(fld2)
 
 
-def new_doc(double=True, line_numbers=True, page_numbers=True, margins_cm=2.5):
+def new_doc(double=True, line_numbers=True, page_numbers=True, margins_cm=2.2):
     doc = Document()
     st = doc.styles["Normal"]
     st.font.name = "Times New Roman"
@@ -76,6 +76,8 @@ def new_doc(double=True, line_numbers=True, page_numbers=True, margins_cm=2.5):
     pf.space_before = Pt(0)
     pf.space_after = Pt(0)
     for s in doc.sections:
+        s.page_width = Cm(21.0)     # A4
+        s.page_height = Cm(29.7)
         s.top_margin = Cm(margins_cm)
         s.bottom_margin = Cm(margins_cm)
         s.left_margin = Cm(margins_cm)
@@ -192,8 +194,12 @@ def table(doc, header, rows, caption=None, note=None, font_size=8.5,
             para.paragraph_format.space_after = Pt(1)
             if i >= align_right_from:
                 para.alignment = WD_ALIGN_PARAGRAPH.CENTER
-            run = para.add_run("" if val is None else str(val))
-            _set_run_font(run, size=font_size)
+            txt = "" if val is None else str(val)
+            for j, seg in enumerate(txt.split("**")):
+                if not seg:
+                    continue
+                run = para.add_run(seg)
+                _set_run_font(run, size=font_size, bold=(j % 2 == 1))
 
     if col_widths:
         total = sum(col_widths)

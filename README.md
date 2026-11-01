@@ -22,7 +22,7 @@ Six drugs licensed for myeloproliferative neoplasms (ruxolitinib, hydroxyurea, a
 code/      one script per analysis step, run in the order below
 tables/    derived results (CSV, UTF-8 with BOM)
 cache/     raw count responses from openFDA, keyed by query string
-figures/   final figures at 300 dpi
+figures/   final figures at 600 dpi (RGB PNG)
 ```
 
 ## Reproducing

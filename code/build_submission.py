@@ -48,6 +48,28 @@ def ci(r, key="ROR"):
 # =====================================================================
 # Markdown → docx
 # =====================================================================
+INLINE = re.compile(r"(\*\*.+?\*\*|\*[^*]+?\*|`[^`]+?`)")
+
+
+def add_inline(para, text, size=12, bold_all=False):
+    """把 **粗体** / *斜体* / `代码` 三种行内标记落成真正的 run 格式。"""
+    for seg in INLINE.split(text):
+        if not seg:
+            continue
+        if seg.startswith("**") and seg.endswith("**") and len(seg) > 4:
+            run = para.add_run(seg[2:-2])
+            K._set_run_font(run, size=size, bold=True)
+        elif seg.startswith("`") and seg.endswith("`") and len(seg) > 2:
+            run = para.add_run(seg[1:-1])
+            K._set_run_font(run, size=size, bold=bold_all)
+        elif seg.startswith("*") and seg.endswith("*") and len(seg) > 2:
+            run = para.add_run(seg[1:-1])
+            K._set_run_font(run, size=size, bold=bold_all, italic=True)
+        else:
+            run = para.add_run(seg)
+            K._set_run_font(run, size=size, bold=bold_all)
+
+
 def md_to_doc(md_path, out_path, include_title=True):
     text = open(md_path, encoding="utf-8").read()
     lines = text.split("\n")
@@ -75,33 +97,45 @@ def md_to_doc(md_path, out_path, include_title=True):
         if line.startswith("- "):
             para = doc.add_paragraph(style="List Bullet")
             para.paragraph_format.space_after = Pt(4)
-            run = para.add_run(line[2:].strip())
-            K._set_run_font(run, size=12)
+            add_inline(para, line[2:].strip(), size=12)
             continue
         if in_refs and re.match(r"^\d+\.\s", line):
             para = doc.add_paragraph()
             para.paragraph_format.left_indent = Cm(0.75)
             para.paragraph_format.first_line_indent = Cm(-0.75)
             para.paragraph_format.space_after = Pt(4)
-            for i, seg in enumerate(line.split("**")):
-                if not seg:
-                    continue
-                run = para.add_run(seg)
-                K._set_run_font(run, size=11, bold=(i % 2 == 1))
+            add_inline(para, line, size=11)
             continue
         # 普通段落
         para = doc.add_paragraph()
         para.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
         para.paragraph_format.space_after = Pt(0)
-        for i, seg in enumerate(line.split("**")):
-            if not seg:
-                continue
-            run = para.add_run(seg)
-            K._set_run_font(run, size=12, bold=(i % 2 == 1))
+        add_inline(para, line, size=12)
 
     doc.save(out_path)
     print("[OK]", os.path.basename(out_path))
     return out_path
+
+
+def manuscript_metrics(path=None):
+    """从 manuscript.md 实时计算字数，避免题名页出现手写的旧数字。"""
+    path = path or os.path.join(SUB, "manuscript.md")
+    text = open(path, encoding="utf-8").read()
+
+    def block(a, b):
+        return text.split(a, 1)[1].split(b, 1)[0]
+
+    def wc(t):
+        t = re.sub(r"^#+\s*", "", t, flags=re.M)
+        t = t.replace("**", "").replace("*", "").replace("`", "")
+        return len(t.split())
+
+    return {
+        "body": wc(block("## 1 Introduction", "## Figure legends")),
+        "abstract": wc(block("## Abstract", "## 1 Introduction")),
+        "keypoints": wc(block("## Key Points", "## Abstract")),
+        "refs": len(re.findall(r"^\d+\.\s", text.split("## References", 1)[1], flags=re.M)),
+    }
 
 
 # =====================================================================
@@ -131,20 +165,21 @@ def build_title_page():
              "Sciences, 1 Xiyuan Playground, Haidian District, Beijing 100091, China",
         size=12)
     K.p(doc, "Email: huxiaomei_2@163.com", size=12)
-    K.p(doc, "Telephone: to be supplied by the corresponding author", size=12,
+    K.p(doc, "Telephone: +86 10 6283 5307", size=12,
         space_after=18)
 
     K.h(doc, "Running title", level=2, size=12, space_before=4)
     K.p(doc, "How much of a thrombotic signal is the disease?", size=12, space_after=18)
 
     K.h(doc, "Manuscript metrics", level=2, size=12, space_before=4)
+    m = manuscript_metrics()
     rows = [
-        ["Main text (Introduction to Conclusions)", "4,610 words"],
-        ["Abstract", "351 words, structured"],
-        ["Key Points", "4 points, 155 words"],
+        ["Main text (Introduction to Conclusions)", f"{m['body']:,} words"],
+        ["Abstract", f"{m['abstract']} words, structured"],
+        ["Key Points", f"4 points, {m['keypoints']} words"],
         ["Tables", "4 (main text) + 7 (electronic supplementary)"],
         ["Figures", "5 (main text) + 1 (electronic supplementary)"],
-        ["References", "14"],
+        ["References", str(m["refs"])],
         ["Reporting guideline", "READUS-PV, checklist supplied"],
     ]
     K.table(doc, ["Item", "Count"], rows, font_size=10, col_widths=[9.5, 6.0],
@@ -225,7 +260,7 @@ def build_tables():
     K.p(doc, "ROR reporting odds ratio, CI confidence interval, a reports naming both the "
              "drug and the event. Pairs are ordered by tier-1 ROR. Fall is the percentage "
              "reduction in the point estimate from tier 1 to tier 2. The median fall across "
-             "the eight splanchnic venous pairs with estimable values in both tiers was 87% "
+             "the ten splanchnic pairs with estimable values in both tiers was 90% "
              "(range 77\u201396%). \u201cNot estimable\u201d indicates that no report in the "
              "disease-matched pool named the drug\u2013event combination. Complete counts, "
              "including b, c and d, are given in Tables S1 and S2.",
@@ -497,7 +532,7 @@ def build_cover_letter():
              "in FAERS, these drugs produce some of the strongest splanchnic signals in the "
              "database, with a reporting odds ratio of 26.57 for hydroxyurea and splenic "
              "infarction. Restricting the reference to reports that record a "
-             "myeloproliferative neoplasm removes a median of 87% of that signal, and the "
+             "myeloproliferative neoplasm removes a median of 90% of that signal, and the "
              "amount removed is almost exactly proportional to how much more common the "
              "event is in the diseased population (slope 0.95, R\u00b2 = 0.64).",
         size=11, space_after=10)
@@ -598,8 +633,11 @@ def build_checklist():
         elif re.match(r"^\d+\.\s", line):
             para = doc.add_paragraph()
             para.paragraph_format.left_indent = Cm(0.6)
-            run = para.add_run(line.strip())
-            K._set_run_font(run, size=9)
+            for i, seg in enumerate(line.strip().split("**")):
+                if not seg:
+                    continue
+                run = para.add_run(seg)
+                K._set_run_font(run, size=9, bold=(i % 2 == 1))
         else:
             para = doc.add_paragraph()
             para.paragraph_format.space_after = Pt(3)

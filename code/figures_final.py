@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-figures_final.py — 投稿版图件（300 dpi，180 mm 宽，无内嵌标题）
+figures_final.py — 投稿版图件（600 dpi，180 mm 宽，无内嵌标题）
 =============================================================
 Fig 1  报告纳入流程
 Fig 2  信号衰减散点（L1 全库参照 → L2 MPN 内参照）
@@ -29,9 +29,9 @@ plt.rcParams.update({
     "xtick.labelsize": 8,
     "ytick.labelsize": 8,
     "legend.fontsize": 7.5,
-    "savefig.dpi": 300,
+    "savefig.dpi": 600,
     "savefig.bbox": "tight",
-    "figure.dpi": 300,
+    "figure.dpi": 150,
 })
 
 INK = "#1B2A38"
